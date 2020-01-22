@@ -42,7 +42,7 @@ install_suricata() {
 	# install with ubuntu package
 	sudo add-apt-repository -y ppa:oisf/suricata-stable
 	sudo apt update
-	sudo apt install suricata suricata-dbg
+	sudo apt -y install suricata suricata-dbg 
 	
 	# stop suricata
 	sudo systemctl stop suricata
