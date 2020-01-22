@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-check-root() {
+check_root() {
 	if [[ $EUID -ne 0 ]]; then
 	   echo "[-] This script must be run as root"
 	   exit 1
@@ -30,8 +30,6 @@ check_iface() {
 		read -p "Interface: " LIFACE
 	fi
 }
-
-
 
 install_suricata() {
 	
@@ -63,6 +61,7 @@ install_suricata() {
 	sudo systemctl start suricata
 
 }
+
 main() {
 
 	#check root
@@ -78,5 +77,6 @@ main() {
 	install_suricata	
 }
 
+main
 
 
