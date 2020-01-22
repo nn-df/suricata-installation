@@ -6,8 +6,8 @@
 
 ## How to run
 ```
-wget https://raw.githubusercontent.com/nn-df/suricata-installation/master/ubuntu.sh
-sudo bash ubuntu.sh
+wget https://raw.githubusercontent.com/nn-df/suricata-installation/master/suricata.sh
+sudo bash suricata.sh
 ```
 
 ### Detail installation
