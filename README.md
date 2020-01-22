@@ -1,8 +1,8 @@
-# This script for installation suricata on ubuntu 16.04 and 18.04
+## This script for installation suricata on ubuntu 16.04 and 18.04
 
 ## Requirements
-	* **Ubuntu** desktop/server LTS (18.04/16.04) with fresh installation
-	* Working internet connection
+- **Ubuntu** desktop/server LTS (18.04/16.04) with fresh installation
+- Working internet connection
 
 ## How to run
 ```
