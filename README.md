@@ -6,7 +6,8 @@
 
 ## How to run
 ```
-wget https://raw.githubusercontent.com/nn-df/suricata-installation/master/suricata.sh
+git clone https://github.com/nn-df/suricata-installation.git
+cd suricata-installation
 sudo bash suricata.sh
 ```
 
