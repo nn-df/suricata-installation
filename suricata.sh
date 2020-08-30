@@ -51,6 +51,18 @@ install_suricata() {
 	sudo mv /etc/suricata/suricata.yaml /etc/suricata/suricata.yaml.bak
 	sudo cp conf/suricata.yaml /etc/suricata/
 	sed -i "s/CHANGE-IFACE/$LIFACE/g" /etc/suricata/suricata.yaml
+
+	# add support for cloud server type
+	PUBLIC=$(curl -s ifconfig.me)
+	LOCAL=$(hostname -I | cut -d' ' -f1)
+	DEFIP="192.168.0.0/16,10.0.0.0/8,172.16.0.0/12"
+	LOCIP="$LOCAL/24"
+
+	if [[ $LOCAL = $PUBLIC ]];then
+		sed -i "s~IP-ADDRESS~$LOCIP~" /etc/suricata/suricata.yaml
+	else
+		sed -i "s~IP-ADDRESS~$DEFIP~" /etc/suricata/suricata.yaml
+	fi
 	
 	# update suricata rules with 'suricata-update' command
 	# currently using rules source from 'Emerging Threats Open Ruleset'
