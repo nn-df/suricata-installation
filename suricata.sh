@@ -51,9 +51,17 @@ install_suricata() {
 	sudo mv /etc/suricata/suricata.yaml /etc/suricata/suricata.yaml.bak
 	sudo cp conf/suricata.yaml /etc/suricata/
 	sed -i "s/CHANGE-IFACE/$LIFACE/g" /etc/suricata/suricata.yaml
-	sudo rm -rf /etc/suricata/rules/*
-	sudo cp rules/* /etc/suricata/rules/
 	
+	# update suricata rules with 'suricata-update' command
+	# currently using rules source from 'Emerging Threats Open Ruleset'
+	# -D command to specify directory from default value '/var/lib/suricata' to '/etc/suricata/'
+	sudo suricata-update -D /etc/suricata/ enable-source et/open
+	sudo suricata-update -D /etc/suricata/ update-sources
+	# --no-merge command 'Do not merge the rules into a single rule file'
+	# Detail on suricata-update command 'https://suricata-update.readthedocs.io/en/latest/update.html'
+	sudo suricata-update -D /etc/suricata/ --no-merge
+
+
 	# enable suricata at startup
 	sudo systemctl enable suricata
 
