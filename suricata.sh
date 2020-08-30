@@ -60,6 +60,9 @@ install_suricata() {
 	# start suricata
 	sudo systemctl start suricata
 
+	# print suricata version
+	suricata -V
+
 }
 
 main() {
