@@ -12,7 +12,7 @@ sudo bash suricata.sh
 ```
 
 ### Detail installation
-- Will install latest version suricata. (current 5.0.3)
+- Will install latest version suricata. [current 6.0.3 (10-September-2021) ]
 - Log location /var/log/suricata/
 - Rules location /etc/suricata/rules/
 
