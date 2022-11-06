@@ -10,9 +10,9 @@ git clone https://github.com/nn-df/suricata-installation.git
 cd suricata-installation
 sudo bash suricata.sh
 ```
+### Youtube Link Video [https://youtu.be/sCzPkT_nQQE]
 
 ### Detail installation
 - Will install latest version suricata. [current 6.0.8 (06-November-2022) ]
 - Log location /var/log/suricata/
 - Rules location /etc/suricata/rules/
-
