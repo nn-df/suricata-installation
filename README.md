@@ -16,3 +16,6 @@ sudo bash suricata.sh
 - Log location /var/log/suricata/
 - Rules location /etc/suricata/rules/
 
+### Youtube Link Video [https://youtu.be/sCzPkT_nQQE]
+[![Suricata Installation Script](https://img.youtube.com/vi/sCzPkT_nQQE/0.jpg)](https://www.youtube.com/watch?v=sCzPkT_nQQE)
+[<img src="https://img.youtube.com/vi/sCzPkT_nQQE/0.jpg" width="50%">](https://www.youtube.com/watch?v=sCzPkT_nQQE)
