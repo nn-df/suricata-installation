@@ -16,11 +16,5 @@ sudo bash suricata.sh
 - Log location /var/log/suricata/
 - Rules location /etc/suricata/rules/
 
-### Donation
-Your help is my strength to create more like this... :). Thanks a lot
-- Buy Me A Cofee [https://ko-fi.com/nonamedefine]
-- Paypal [https://www.paypal.me/nonamedf]
-
-
 ### Youtube Link Video [https://youtu.be/sCzPkT_nQQE]
 [<img src="https://img.youtube.com/vi/sCzPkT_nQQE/0.jpg" width="25%">](https://www.youtube.com/watch?v=sCzPkT_nQQE)
